@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-<body{
+body{
     font-family: Arial, sans-serif;
 }
 .logo{
@@ -65,7 +65,10 @@
 }
 .btn:hover{
     color: #6699cc;
+    text-align: center;
+    text-decoration: none;
 }
+    
 /* home page*/
 #home{
     background-color: #fdfdfd;
@@ -132,10 +135,8 @@
     color: white;
     border-radius: 15px;
     display: block;
-    text-align: center;
     text-decoration: none;
 }
-
 
 /* style for the about section */
 #about{
