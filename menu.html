@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:  Arial, sans-serif;
+        }
+        /* nav bar styliny */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+            color: white;
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+            font-weight: 500px;
+        }
+        .nav-links a:hover{
+            color: #ffcc00;
+        }
          #menu{
     background-color: #fdfdfd;
     padding: 60px 20px;
@@ -22,11 +56,13 @@
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-} 
+}
+
+            
 .listing-title{
-            text-align: center;
-            margin: 50px 0;
-        }
+    text-align: center;
+     margin: 50px 0;
+ }
  .items{
         display: flex;
         flex-wrap: wrap;
@@ -44,6 +80,49 @@
        height: 200px;
        object-fit: cover;
  }
+ .listing-code{
+       text-align: center;
+        margin: 50px 0;
+ }
+ .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+     }
+ .code{
+        width: 300px;
+       background-color: #fdfdfd;
+       border-radius: 15px;
+       overflow: hidden;
+ }
+ code img{
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+ }
+ .listing-sec{
+    text-align: center;
+     margin: 50px 0;
+ }
+ .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+ }
+ .card2{
+     width: 300px;
+       background-color: #fdfdfd;
+       border-radius: 15px;
+       overflow: hidden;
+ }
+ .card2 img{
+    width: 100%;
+       height: 200px;
+       object-fit: cover;
+ }
+
 button{
          background-color: #333;
          padding: 12px 20px;
@@ -54,9 +133,21 @@ button{
          font-size: 16px;
          text-decoration: none;
         }
+.code button a:hover{
+    color: #ffcc00;
+}
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">Delicio</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Order</a></li>
+        </ul>
+    </nav>
             <!--menu section-->
     <section id="menu">
         <h1 class="Our Menu">Our Menu</h1>
@@ -65,45 +156,73 @@ button{
             satisfying, we've got everything for everyone.
         </p>
         <section class="listing">
-            <h2 class="listing-title">Featured Listings</h2>
+            <h2 class="listing-title">Italian Dishes</h2>
             <div class="items">
         <div class="card">
-            <img src="OIP (14).webp" alt="">
-            <h3>Pizza</h3>
-            <p>$10</p>
+            <img src="th (8).webp" alt="">
+            <h3>Sausage Bake</h3>
+            <p>2Euro</p>
             <button>Order Now</button>
         </div>
         <div class="card">
-            <img src="OIP (16).webp" alt="">
-            <h3>Burger</h3>
-            <p>$12</p>
+            <img src="OIP (13).webp" alt="">
+            <h3>Gnocchi</h3>
+            <p>2Euro</p>
             <button>Order Now</button>
         </div>
         <div class="card">
-            <img src="OIP (15).webp" alt="">
-            <h3>Salad</h3>
-            <p>$10</p>
+            <img src="th.jpeg" alt="">
+            <h3>Butternut Sauce</h3>
+            <p>2Eur0</p>
            <button>Order Now</button>
         </div>
-        <div class="card">
+        </div>
+    </section>
+        <section class="listing">
+         <h2 class="listing-code">Cameroon Dishes</h2>
+         <div class="items">  
+        <div class="code">
             <img src="download (3).webp" alt="">
             <h3>Corn fufu and Vegetables</h3>
-            <p>$10</p>
+            <p>1000frs</p>
             <button>Order Now</button>
         </div>
-        <div class="card">
-            <img src="OIP.jpeg">
+        <div class="code">
+            <img src="OIP.jpeg" alt="">
             <h3>Fried Rice</h3>
-            <p>$12</p>
+            <p>1000frs</p>
             <button>Order Now</button>
         </div>
-        <div class="card">
+        <div class="code">
             <img src="OIP (11).webp">
             <h3>Spaghetti</h3>
-            <p>$10</p>
+            <p>1000frs</p>
             <button>Order Now</button>
         </div>
-        </div>
+         </div>
+        </section>
+        <section class="listing">
+            <h2 class="listing-sec">Appitizers</h2>
+            <div class="items">
+            <div class="card2">
+                <img src="th (1).jpeg" alt=""> 
+                <h3>Chiken Salad</h3>
+                <p>800frs</p>
+                <button>Order Now</button>
+            </div>
+            <div class="card">
+                <img src="th (9).webp" alt="">
+                <h3>Puff Pastry</h3>
+                <p>800frs</p>
+                <button>Oder Now</button>
+            </div>
+            <div class="card">
+                <img src="th (10).webp" alt=""
+                <h3>Fresh Fruits</h3>
+                <p>500frs</p>
+                <button>Order Now</button>
+            </div>
+            </div>
         </section>
     </section>
 </body>

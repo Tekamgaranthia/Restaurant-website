@@ -5,7 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-#about{
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:  Arial, sans-serif;
+        }
+        /* nav bar styliny */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+            color: white;
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+
+ .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+            font-weight: 500px;
+        }
+        .nav-links a:hover{
+            color: #ffcc00;
+        }
+ #about{
     background-color: #fdfdfd;
     padding: 60px 20px;
     text-align: center;
@@ -28,6 +64,16 @@
     </style>
 </head>
 <body>
+     <nav class="navbar">
+        <div class="logo">Delicio</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">prices</a></li>
+        </ul>
+    </nav>
+
      <section id="about">
         <h1 class="about us">About Delicio Resturant</h1>
         <p>At Delicio, we're passionate about crafting unforgettable meals with fresh,
